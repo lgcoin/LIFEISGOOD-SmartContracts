@@ -177,7 +177,7 @@ contract Ownable {
 
 }
 
-contract MintableToken is StandardToken, Ownable {
+contract MintableToken is StandardToken, Ownable { //creation of ССЕ token
   event Mint(address indexed to, uint256 amount);
   event MintFinished();
   string public name = "Crystal Clear Token";
@@ -193,7 +193,7 @@ contract MintableToken is StandardToken, Ownable {
   }
 
   function MintableToken(){
-    mint(msg.sender,10000000000000000000000000);
+    mint(msg.sender,10000000000000000000000000); //total amount issued
     finishMinting();
   }
     
