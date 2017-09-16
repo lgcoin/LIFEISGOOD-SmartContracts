@@ -195,7 +195,7 @@ contract MintableToken is StandardToken, Ownable {
   }
 
   function MintableToken(){
-    mint(msg.sender,10000000000000000000000000);
+    mint(msg.sender,10000000000000000000000000); //Total amount of tokens issued with 18 Decimals
     finishMinting();
   }
     
