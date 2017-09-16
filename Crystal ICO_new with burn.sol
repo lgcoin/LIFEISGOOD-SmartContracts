@@ -200,7 +200,7 @@ contract MintableToken is StandardToken, Ownable {
   }
     
   /**
-   * @dev Function to mint tokens
+   * @dev Function to mint tokens in total
    * @param _to The address that will recieve the minted tokens.
    * @param _amount The amount of tokens to mint.
    * @return A boolean that indicates if the operation was successful.
