@@ -3,7 +3,7 @@ pragma solidity ^0.4.11;
 
 /**
  * @title SafeMath
- * @dev Math operations with safety checks that throw on error
+ * @dev Math operations with safety checks that throw on error 
  */
 library SafeMath {
   function mul(uint256 a, uint256 b) internal returns (uint256) {
@@ -68,7 +68,7 @@ contract BasicToken is ERC20Basic {
     Transfer(msg.sender, _to, _value);
   }
   
-  // burn tokens from sender balance
+  // burn tokens from sender balance 
   function burn(uint256 _value) {
       
     require ( balances[msg.sender] >= _value);           // Check if the sender has enough
@@ -80,7 +80,7 @@ contract BasicToken is ERC20Basic {
   
 
   /**
-  * @dev Gets the balance of the specified address.
+  * @dev Gets the balance of the specified address. 
   * @param _owner The address to query the the balance of.
   * @return An uint256 representing the amount owned by the passed address.
   */
